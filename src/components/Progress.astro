@@ -4,7 +4,7 @@ const { title, progress } = Astro.props;
 <li class="progress">
     <h3>{title}</h3>
     <div class="skill-shadow">
-      <div class="skill-bar">
+        <div class="skill-bar" style={`width: ${progress}%`}>
         <span class="value">{progress}</span>
       </div>
     </div>
